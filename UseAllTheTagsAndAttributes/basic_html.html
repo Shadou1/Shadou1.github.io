@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic_html.css">
+    <title>UseAllTags</title>
+</head>
+<body>
+    
+    <!-- Basic HTML and HTML5 -->
+
+    <nav class="container2">
+        <a href="basic_html.html">Basic HTML</a>
+        <a href="basic_css.html">Basic CSS</a>
+        <a href="applied_visual_design.html">Applied Visual Design</a>
+        <a href="applied_accessibility.html">Applied Accessibility</a>
+        <a href="responsive_web_design_principles.html">Responsive Web Design Principles</a>
+        <div class="container-flex-column2">
+            <a href="css_flexbox.html">CSS Flexbox</a>
+            <a href="css_grid.html">CSS Grid</a>
+        </div>
+    </nav>
+    
+    <!-- This is a comment -->
+    
+    <main id="main">
+        <h2 id="header1">Cats (header indicating that the page will be about cats)</h2>
+
+        Main content of the page. Search engines will use this tag
+        to find out about your website.
+
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quam quibusdam repellat omnis molestias eos consectetur, qui tenetur voluptatibus doloribus aperiam consequuntur deserunt et laborum suscipit magnam mollitia necessitatibus distinctio.</p>
+            
+            <img src="https://bit.ly/fcc-relaxing-cat" alt="Always include alt attribute">
+    
+            <a href="https://google.com" target="_blank">Anchor with href attribute that leads to google.com and opens in a new tab because of target="_blank"</a>
+    
+            <a id="ex-a" href="#header1">External link that leads to the top of this page to the element with id "header1"</a>
+    
+            <p>Links can be <a href="">Nested</a></p>
+    
+            <a href="#">Dead Link using # as href</a>
+    
+            <p>Other elements can be used as links, for example Images: <a href="#"><img src="Portrait 15.png" alt="Portrait of Ogre"></a></p>
+        </div>
+
+        <div class="container2">
+            <div>
+                <p>Unordered list example with 'ul' and 'li' tags</p>
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                </ul>
+            </div>
+    
+            <div>
+                <p>Ordered list example with 'ol' and 'li' tags</p>
+                <ol>
+                    <li>Раз</li>
+                    <li>Два</li>
+                    <li>Три</li>
+                </ol>
+            </div>
+        </div>
+
+        <input type="text" placeholder="input with type text and a placeholder">
+
+        <form class="container" action="shadob">
+            <p>Form that sends data to url specified in 'action' attribute</p>
+            <input type="text" placeholder="this input fild is required" required>
+            <button type="submit">Button with type 'submit' inside a 'form' tag</button>
+
+            <div>
+                <p>
+                    Radio buttons should have the same 'name' tag to work together and
+                    they should have labels, either nested in them or associated with them
+                    using 'for' attribute.
+                    <br>
+                    They must also have 'value' attributes that they report to the 'action'
+                    url of the 'form' tag.
+                </p>
+                <label for="ryes">
+                    <input type="radio" name="yes-no" id="ryes">Yes
+                </label>
+
+                <input type="radio" name="yes-no" id="rno">
+                <label for="rno">No</label>
+            </div>
+
+            <div>
+                <p>
+                    Checkboxes follow the same rules as radio buttons: they should
+                    have tha same 'name' attribute and they must have assosiated labels.
+                    <br>
+                    Also they must have the 'value' attributes.
+                    <br>
+                    Take note of how the first checkbox is checked using the 'checked' attribute
+                </p>
+                <label for="chm">
+                    <input type="checkbox" name="hmmm" id="chm" checked>Hm
+                </label>
+
+                <input type="checkbox" name="hmmm" id="chmm">
+                <label for="chmm">Hmm</label>
+            </div>
+            
+        </form>
+
+        <div class="container">
+            Use the 'div' tag for grouping of other tags. Or use it as a general
+            purpose container.
+        </div>
+
+    </main>
+
+
+</body>
+</html>

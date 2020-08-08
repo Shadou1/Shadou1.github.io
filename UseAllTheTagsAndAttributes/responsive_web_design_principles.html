@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Principles</title>
+    <link rel="stylesheet" href="responsive_web_design_principles.css">
+</head>
+<body>
+    
+    <nav class="container-flex-row">
+        <a href="basic_html.html">Basic HTML</a>
+        <a href="basic_css.html">Basic CSS</a>
+        <a href="applied_visual_design.html">Applied Visual Design</a>
+        <a href="applied_accessibility.html">Applied Accessibility</a>
+        <a href="responsive_web_design_principles.html">Responsive Web Design Principles</a>
+        <div class="container-flex-column2">
+            <a href="css_flexbox.html">CSS Flexbox</a>
+            <a href="css_grid.html">CSS Grid</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Responsive Web Design Principles</h1>
+
+        <div class="container-grid-1_2xY">
+            <h2>Media queries</h2>
+
+            <div>
+                <p>
+                    Media Queries consist of a media type, and if that media type <strong>matches the type of device</strong> the document is displayed on,
+                    the styles are applied. You can have as many selectors and styles inside your media query as you want.
+                </p>
+            </div>
+
+            <div id="media-rule-example">
+                <pre>
+@media (max-width: 500px){
+    #media-rule-example {
+        background-color: burlywood;
+    }
+}
+</pre>
+            </div>
+        </div>
+
+        <div class="container-grid-1_2xY">
+            <h2>Make images responsive</h2>
+
+            <div>
+                <p>
+                    The <code>max-width</code> of 100% will make sure the image is never wider than the container it is in,
+                    and the <code>height</code> of auto will make the image keep its original aspect ratio.
+                </p>
+            </div>
+
+            <div>
+                <img style="width: 150px;" src="Portrait 14.png" alt="I am not responsive">
+                <img style="width: 150px;" class="responsive-image" src="Portrait 15.png" alt="I am responsive">
+            </div>
+        </div>
+
+        <div class="container-grid-1_2xY">
+            <h2>High resolution diplays</h2>
+
+            <div>
+                <p>
+                    The simplest way to make your images properly appear on High-Resolution Displays,
+                    such as the MacBook Pros "retina display" is to define their <code>width</code>
+                    and <code>height</code> values as only half of what the original file is.
+                </p>
+            </div>
+
+            <div>
+                <img style="width: 155; height: 200px;"src="Portrait 3.png" alt="I am half width and height">
+            </div>
+        </div>
+
+        <div class="container-grid-1_2xY">
+            <h2>Responsive typography</h2>
+
+            <div>
+                <p>
+                    Instead of using <code>em</code> or <code>px</code> to size text, you can use <strong>viewport units</strong>
+                    for responsive typography. Viewport units, like percentages, are <strong>relative units</strong>,
+                    but they are based off different items. Viewport units are relative to the <strong>viewport dimensions</strong>
+                    (width or height) of a device, and percentages are relative to the size of the parent container element.
+                </p>
+            </div>
+
+            <div>
+                <p>The four different viewport units are:</p>
+                <ul>
+                    <li><code>vw</code> (viewport width): <code>10vw</code> would be 10% of the viewport's width.</li>
+                    <li><code>vh</code> (viewport height): <code>3vh</code> would be 3% of the viewport's height.</li>
+                    <li><code>vmin</code> (viewport minimum): <code>70vmin</code> would be 70% of the viewport's smaller dimension (height or width).</li>
+                    <li><code>vmax</code> (viewport maximum): <code>100vmax</code> would be 100% of the viewport's bigger dimension (height or width).</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

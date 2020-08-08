@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="basic_css.css">
+    <title>Basic Css</title>
+
+    <style>
+        #h2_with_style_tag {
+            color:darkcyan;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="container2">
+        <a href="basic_html.html">Basic HTML</a>
+        <a href="basic_css.html">Basic CSS</a>
+        <a href="applied_visual_design.html">Applied Visual Design</a>
+        <a href="applied_accessibility.html">Applied Accessibility</a>
+        <a href="responsive_web_design_principles.html">Responsive Web Design Principles</a>
+        <div class="container-flex-column2">
+            <a href="css_flexbox.html">CSS Flexbox</a>
+            <a href="css_grid.html">CSS Grid</a>
+        </div>
+    </nav>
+    
+    <main>
+
+        <h1>Basic CSS</h1>
+    
+        <div class="container">
+    
+            <h2 style="color: crimson;">Style applied inline with the <i>style</i> attribute.</h2>
+    
+            <h2 id="h2_with_style_tag">Tag styled in html using &ltstyle&gt tag.</h2>
+    
+            <h2 class="coral-text">Tag styled using <i>class</i> attribute.</h2>
+            <p class="coral-text">Another tag styled with <i>class</i> attribute and with a <i>p</i> selector.</p>
+    
+            <p>This paragraph uses cutom font, but can also degrade.</p>
+    
+        </div>
+    
+        <div class="container">
+            Smaller image using 'width' property:
+            <img class="smaller-image" src="Portrait 14.png" alt="Portrait">
+            Image with a border and small width (two classes):
+            <img class="smaller-image some-border" src="Portrait 3.png" alt="Portrait">
+        </div>
+    
+        <div class="container custom-background">
+            Custom 'background-color' property.
+            <p class="custom-background" id="id-background">
+                This has an ID and its CSS has higher priority than its class.
+            </p>
+        </div>
+    
+        <div class="container">
+            Margin and Padding:
+    
+            <div class="custom-background has-border large-padding">
+                This has higher padding
+            </div>
+            <div class="custom-background has-border small-padding">
+                Then this
+            </div>
+    
+            <div class="has-border">
+                <div class="custom-background has-border large-margin">
+                    This has higher margin
+                </div>
+                <div class="custom-background has-border small-margin">
+                    Then this
+                </div>
+            </div>
+    
+            <div class="has-border">
+                <div class="custom-background has-border no-margin">
+                    This has no margin
+                </div>
+                <div class="custom-background has-border negative-margin">
+                    This has negative margin
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            Using attribute selector to only select a checkbox:
+            <input type="button" value="button">
+            <input type="checkbox" name="check" id="check1">
+            <input type="datetime" name="date" id="date1">
+            <input type="radio" name="radio" id="radio1">
+            Using relative units for elements width and height:
+            <div class="rel-units has-border">
+                10em width and height;
+            </div>
+        </div>
+    
+        <div class="container">
+            <p>
+                Remember that all children will <strong>inherit properties from their parents</strong>.
+                At least those properties whose default values are set to <code>inherit</code>.
+                <br>
+                For example font size of all elements on this page is inherited from
+                the body element.
+            </p>
+            <p>
+                If tag has multiple classes with overlapping properties then the class
+                that was declared <strong>last</strong> will be applied.
+                <br>
+                <strong>ID</strong> declarations will override class declarations.
+                <br>
+                <strong>Inline</strong> styles will override id declarations.
+                <br>
+                Properties declared with the <strong>!important</strong> keyword will override all other
+                declarations.
+            </p>
+        </div>
+        <div class="container">
+            <p>
+                Don't forget about fallback values with css variables
+                <br>
+                var(--var-name [, optional-fallback-value])
+            </p>
+        </div>
+    </main>
+</body>
+</html>
