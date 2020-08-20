@@ -1,0 +1,174 @@
+/* Headers */
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    /* border: 1px solid black; */
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+header, h1, h2, h3, h4 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+}
+
+header {
+    font-size: 2.5rem;
+}
+
+h3, h4 {
+    font-weight: normal;
+}
+
+p, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-style: oblique;
+}
+
+a:any-link {
+    color: black;
+}
+
+a:active {
+    /* color: black; */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+}
+
+.container1 {
+    background: linear-gradient(160deg,
+    rgba(80, 90, 150, 0.8) 0%,
+    rgba(100, 100, 200, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome {
+    /* width: 100vw; */
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#welcome > h1 {
+    text-align: center;
+    font-size: 4rem;
+
+    color: #222;
+}
+
+#navigation {
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.nav-link {
+    margin: 0 10px;
+
+    font-size: 2rem;
+}
+
+#social-section {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.section-header, .projects-header, .section-info {
+    margin: 10px 0;
+    
+    text-align: center;
+}
+
+.links {
+    margin: 20px 0;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.link-img {
+    margin: 0 10px;
+}
+
+#projects-section {
+    margin-top: 50px;
+
+    min-height: 1000px;
+}
+
+.projects {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-header {
+    border-bottom: 5px solid black;
+    align-self: center;
+}
+
+.links-grid {
+    display: grid;
+
+    gap: 10px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.links-grid > a {
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+
+    height: 75px;
+
+    display: grid;
+
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+
+    background-color: lightslategray;
+}
+
+footer > p:last-child {
+    justify-self: end;
+}
+
+footer > p:last-child {
+    grid-area: 4 / 5 / 3 / 4;
+}
