@@ -1,0 +1,22 @@
+{
+  "name": "github-pages",
+  "version": "1.0.0",
+  "description": "GitHub Pages Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shadou1/Shadou1.github.io.git"
+  },
+  "author": "Shadou1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shadou1/Shadou1.github.io/issues"
+  },
+  "homepage": "https://github.com/Shadou1/Shadou1.github.io#readme",
+  "dependencies": {
+    "tabler-icons": "^1.12.0"
+  }
+}
